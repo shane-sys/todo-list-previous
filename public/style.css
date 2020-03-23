@@ -1,0 +1,31 @@
+.line {
+  text-decoration: line-through;
+}
+#clearAll{
+  font-size: 32px;
+  border-radius: 20px;
+  background-color: rgb(171,198,74);
+  font-family: cursive;
+  color:rgb(207,100,179);
+      border: dashed;
+      margin-left: 45%;
+    margin-top: 8%;
+
+}
+#clearCompleted{
+  font-size: 32px;
+  border-radius: 20px;
+  background-color: rgb(171,198,74);
+  font-family: cursive;
+  color:rgb(207,100,179);
+      border: dashed;
+}
+
+/* img{
+  background-image: url("images/todo-list");
+} */
+
+
+body{
+  background-color: orange;
+}

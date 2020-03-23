@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <section class="displayInput">
+      <h1>To Do List</h1>
+
+      <!-- <img src="images/todo-list.jpeg" alt=""> -->
+      <form id="listInput" action="/toDoList" method="post">
+        <input name="task" placeholder="Enter Task" id="listItem" type="text">
+        <button type="submit" id="addToList">Add</button>
+      </form>
+    </section>
+    <section class="shownList">
+      <ul id="addUl">
+        <% for(var i=0; i<tasksArray.length; i++) {%>
+          <li class="toDoList">
+            <span><%= tasksArray[i].task %></span>
+            <span><%= tasksArray[i].completed %></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+      </ul>
+    </section>
+
+  </section>
+
+
+
+<section class="">
+
+</section>
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
